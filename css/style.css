@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
+* {
+	font-family: 'Fira Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+/* Header */
+.header {
+	margin: 10px;
+	padding: 25px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.header a {
+	text-decoration: none;
+	color: black;
+}
+
+.navbar ul {
+	display: flex;
+	gap: 15px;
+	list-style: none;
+}
+
+.navbar li a {
+	padding: .5rem 1.5rem;
+	border-radius: 999px;
+	transition: all .2s ease-in-out;
+
+}
+
+.navbar li a:hover {
+	background-color: #11212D;
+	color: white;
+}
+/* Akhir Header */
+/* Content */
+main {
+	display: flex;
+	width: 100%;
+}
+
+main h1, aside h2 {
+	text-transform: uppercase;
+}
+
+main  p {
+	text-transform: capitalize;
+}
+
+.card {
+	margin: 10px;
+	padding: 25px;
+	box-shadow: 0 0 2px 0 black;
+}
+
+.content {
+	width: 70%;
+}
+
+#profil {
+	width: 30%;
+	height: 50%;
+}
+.img {
+	width: 100%;
+	max-height: 300px;
+	border: 1px solid black;
+}
+/* Akhir Content */
+/* Footer */
+footer {
+	padding: 25px;
+	text-align: center;
+	background-color: #11212D;
+	color: white;
+}
+/* Akhir Footer */
+/* Responsiv */
+@media screen and (max-width: 768px) {
+	.header {
+		flex-direction: column;
+	}
+	main {
+		flex-direction: column;
+	}
+	.content, #profil {
+		width: 100%;
+		height: 100%;
+	}
+}
